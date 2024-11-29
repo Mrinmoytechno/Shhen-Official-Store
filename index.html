@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLBB Recharge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shhen Official Store</h1>
+    </header>
+    <div class="container">
+        <h2>Recharge Diamonds</h2>
+        <form id="rechargeForm">
+            <div class="form-group">
+                <label for="userId">MLBB User ID:</label>
+                <input type="text" id="userId" placeholder="Enter your User ID" required>
+            </div>
+            <div class="form-group">
+                <label for="zoneId">Zone ID:</label>
+                <input type="text" id="zoneId" placeholder="Enter your Zone ID" required>
+            </div>
+            <div class="form-group">
+                <label for="package">Select Package:</label>
+                <select id="package">
+                    <option value="50">50 Diamonds - $0.99</option>
+                    <option value="250">250 Diamonds - $4.99</option>
+                    <option value="500">500 Diamonds - $9.99</option>
+                    <option value="1000">1000 Diamonds - $19.99</option>
+                </select>
+            </div>
+            <button type="submit">Recharge</button>
+        </form>
+        <!DOCTYPE html>
+
+<head>
+    <style>
+        ul {
+            color: green; /* Changes bullet and text color */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Cheap</li>
+        <li>Reliable</li>
+        <li>Fast</li>
+    </ul>
+        <p id="output" style="margin-top: 20px;"></p>
+    </div>
+    <script>
+        document.getElementById('rechargeForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const userId = document.getElementById('userId').value;
+            const zoneId = document.getElementById('zoneId').value;
+            const package = document.getElementById('package').value;
+            const output = document.getElementById('output');
+
+            if (userId && zoneId) {
+                output.innerHTML = `Recharge successful!<br>User ID: ${userId}<br>Zone ID: ${zoneId}<br>Package: ${package} Diamonds`;
+            } else {
+                output.innerHTML = "Please fill all the fields.";
+            }
+        });
+    </script>
+</body>
+</html>
